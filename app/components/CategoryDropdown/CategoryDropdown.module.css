@@ -1,0 +1,42 @@
+.dropdownWrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.selectWrapper {
+    display: flex;
+    flex-direction: column;
+    color: #121110;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.headLabel {
+    visibility: hidden;
+}
+
+.select {
+    appearance: none;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.select:hover:not(:disabled) {
+    border: 1px solid #403D3B;
+}
+
+.searchTag {
+    background-color: #ffffff;
+    color: #121110;
+}
+
+.option {
+    background-color: #ffffff;
+    color: #121110;
+}
+
+

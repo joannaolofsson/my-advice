@@ -1,0 +1,24 @@
+.badgeWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    padding: .4rem .5rem;
+    border-radius: 10px;
+    color: #1A1918;
+}
+
+.removeBtn {
+    margin-left: .5rem;
+    cursor: pointer;
+}
+

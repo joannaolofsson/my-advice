@@ -1,7 +1,7 @@
-.adviceCard {
+.container {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 1000px;
     margin: var(--margin-medium) auto;
     padding: var(--padding-small) var(--padding-medium);
     background-color: var(--bg-color-primary);    
@@ -9,16 +9,16 @@
     border-radius: 10px;
 }
 
-/*
-.adviceCard #advice {
-    height: 125px;
-}*/
-
-/*
-.btn-wrapper {
+.adviceRow {
     display: flex;
-}*/
+    justify-content: space-between;
+}
 
-.btnWrapper {
-    align-self: flex-end;
+.adviceTitle {
+    display: none;
+}
+
+.selectRow {
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Roboto, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { AdviceProvider } from "./context/AdviceContext";
 
-const nunitoSans = Nunito({
+const roboto = Roboto({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: 'swap'
 });
+
+const playFair = Playfair_Display ({
+  variable: "--font-playfair-display",
+  subsets: ['latin'],
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunitoSans.variable}`}>
+      <body className={`${roboto.variable} ${playFair.variable}`}>
         <AdviceProvider>
         {children}
         </AdviceProvider>

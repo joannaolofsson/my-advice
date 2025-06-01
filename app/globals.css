@@ -23,7 +23,7 @@ body {
 body {
   background-color: var(--bg-color-primary);
   color: var(--font-color-primary);
-  font-family: "Nunito Sans", serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,22 +35,24 @@ body {
 }
 
 h1 {
+  font-family: "Playfair Display", serif;
   text-align: center;
+  font-style: italic;
   font-size: 3rem;
 }
 
 h2 {
-    font-family: 'clover', sans-serif;
-    text-transform: lowercase;
+    font-family: "Roboto", sans-serif;
     font-size: 2.25rem;
+    font-weight: 400;
 }
 
 p {
     font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-

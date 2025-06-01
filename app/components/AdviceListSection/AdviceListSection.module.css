@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 1rem;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 var(--padding-medium);
+    font-family: "Nunito Sans", serif;
+    list-style-type: none;
+}
+
+.listRows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.listTags {
+    display: none;
+}

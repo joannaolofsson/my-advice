@@ -1,45 +1,8 @@
 .main {
-    width: 100vw;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-}
-
-button {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    height: 36px;
-    margin: var(--padding-xs);
-    padding: var(--padding-xs);
-    border-radius: 5px;
-    background-color: var(--bg-color-primary);
-    color: var(--font-color-secondary);
-    border: 1px solid var(--border-color-secondary);
-    font-size: 1rem;
-}
-
-button:hover {
-    background-color: var(--bg-color-secondary);
-    color: var(--font-color-tertiary);
-    border: 1px solid var(--border-color-primary);
-}
-
-/*
-#advice-list {
-    display: flex;
-    flex-direction: column-reverse;
-    row-gap: 1rem;
-    width: 600px;
+    width: 1000px;
     margin: 0 auto;
-    padding: 0 var(--padding-medium);
-    font-family: "Nunito Sans", serif;
-    list-style-type: none;
-}*/
-/*
-.advice-col-one {
-    display: grid;
-    grid-template-columns: 1fr 100px 60px;
-    padding-bottom: var(--padding-xs);
-    border-bottom: .2px solid var(--border-color-primary);
-}*/
+    padding: 2rem 0;
+}
