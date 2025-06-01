@@ -1,0 +1,24 @@
+.adviceCard {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: var(--margin-medium) auto;
+    padding: var(--padding-small) var(--padding-medium);
+    background-color: var(--bg-color-primary);    
+    border: .5px solid var(--border-color-primary);
+    border-radius: 10px;
+}
+
+/*
+.adviceCard #advice {
+    height: 125px;
+}*/
+
+/*
+.btn-wrapper {
+    display: flex;
+}*/
+
+.btnWrapper {
+    align-self: flex-end;
+}
