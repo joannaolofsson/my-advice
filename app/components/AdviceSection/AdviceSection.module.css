@@ -1,9 +1,10 @@
 .container {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     width: 1000px;
     margin: var(--margin-medium) auto;
-    padding: var(--padding-small) var(--padding-medium);
+    padding: var(--padding-medium);
     background-color: var(--bg-color-primary);    
     border: .5px solid var(--border-color-primary);
     border-radius: 10px;
@@ -21,4 +22,5 @@
 .selectRow {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }

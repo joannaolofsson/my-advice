@@ -13,19 +13,20 @@ export default function AdviceSection()  {
 
     const { addAdvice } = useAdvice();
 
-    const fetchAdvice = async () => {
-        try {
-            const res = await fetch("https://api.adviceslip.com/advice?t=", { cache: "no-store"});
-            const json = await res.json();
-            const slip = json.slip;
+   const fetchAdvice = async () => {
+    try {
+        const res = await fetch("https://api.adviceslip.com/advice?t=", { cache: "no-store"});
+        const json = await res.json();
+        const slip = json.slip;
 
-            setTitle(`Advice #${slip.id}`);
-            setText(slip.advice);
-        } catch (err) {
-            console.error("Failed to fetch advice", err);
-        }
-    };
-
+        setTitle(`Advice #${slip.id}`);
+        setText(slip.advice);
+        setTags([]); // ✅ Reset tags here
+        setCategory(""); // ✅ Optionally reset category too
+    } catch (err) {
+        console.error("Failed to fetch advice", err);
+    }
+};
         const handleSave = () => {
         addAdvice({ title, text, category, tags });
         };
@@ -40,7 +41,6 @@ export default function AdviceSection()  {
             </div>
             <div className={styles.selectRow}>
                 <CategoryManager tags={tags} setTags={setTags} />
-
                 <Button variant="secondary" onClick={handleSave}>Save</Button>
             </div>
         </div>

@@ -15,8 +15,9 @@ function CategoryManager({tags, setTags}: CategoryManagerProps) {
 
   return (
     <div className={styles.selectWrapper}>
+      <TagCategory tags={tags} setTags={setTags} />
         <CategoryDropdown tags={tags || []} setTags={setTags} />
-        <TagCategory tags={tags} setTags={setTags} />
+        
     </div>
   )
 }

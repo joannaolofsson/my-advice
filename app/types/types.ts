@@ -28,20 +28,22 @@ export interface TagProps {
   setTags: React.Dispatch<React.SetStateAction<string[]>>;
 }
 
-/*export interface AdviceInputProps {
+export interface AdviceInputProps {
   customTag: string;
   setCustomTag: React.Dispatch<React.SetStateAction<string>>;
   handleAddCustomTag: () => void;
-   onAddCategory: (newCategory: string) => void;
-}*/
+  onAddCategory: (newCategory: string) => void;
+}
 
 export interface CategoryInputProps {
   customTag: string;
   setCustomTag: (tag: string) => void;
   handleAddCustomTag: () => void;
+   //onAddCategory: (newCategory: string) => void;
 }
 
 export type CategoryManagerProps = {
   tags: string[];
   setTags: React.Dispatch<React.SetStateAction<string[]>>;
 };
+

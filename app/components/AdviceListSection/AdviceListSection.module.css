@@ -5,7 +5,6 @@
     width: 1000px;
     margin: 0 auto;
     padding: 0 var(--padding-medium);
-    font-family: "Nunito Sans", serif;
     list-style-type: none;
 }
 
@@ -23,5 +22,7 @@
 }
 
 .listTags {
-    display: none;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Roboto", sans-serif;
 }

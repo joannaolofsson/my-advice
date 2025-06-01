@@ -1,10 +1,10 @@
 .badgeWrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-grow: 1;
     gap: 1rem;
     flex-wrap: wrap;
+    max-height: 24px;
+    align-self: flex-start;
 }
 
 .badge {
@@ -12,13 +12,15 @@
     justify-content: center;
     align-items: center;
     background-color: lightblue;
-    padding: .4rem .5rem;
-    border-radius: 10px;
+    padding: .3rem .4rem;
+    border-radius: 4px;
     color: #1A1918;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .removeBtn {
-    margin-left: .5rem;
+    margin-left: .3rem;
     cursor: pointer;
 }
 
