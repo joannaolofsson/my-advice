@@ -2,7 +2,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { AdviceItem, AdviceContextType } from '../types/types';
 
-// ✅ Define once here at the top
 const AdviceContext = createContext<AdviceContextType | undefined>(undefined);
 
 export const AdviceProvider = ({ children }: { children: React.ReactNode }) => {

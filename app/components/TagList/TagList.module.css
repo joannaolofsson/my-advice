@@ -1,0 +1,26 @@
+.badgeWrapper {
+    display: flex;
+    flex-grow: 1;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-height: 24px;
+    align-self: flex-start;
+}
+
+.badge {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.removeBtn {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+

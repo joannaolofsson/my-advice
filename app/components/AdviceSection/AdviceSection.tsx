@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from './AdviceSection.module.css';
 import Button from "../ui/Button/Button";
 import { useAdvice } from "../../context/AdviceContext";
-import CategoryManager from "../CategoryManager/CategoryManager";
+import CategoryManager from "../TagManager/TagManager";
 
 export default function AdviceSection()  {
     const [title, setTitle] = useState("Advice #56");
@@ -28,9 +28,8 @@ export default function AdviceSection()  {
     }
 };
         const handleSave = () => {
-        addAdvice({ title, text, category, tags });
+        addAdvice({ title, text, tags });
         };
-
 
     return (
         <div className={styles.container}>

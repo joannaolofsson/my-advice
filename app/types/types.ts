@@ -1,9 +1,8 @@
 export type AdviceItem = {
-    title: string;
-    text: string;
-    category: string;
-    tags: string[];
-};
+  title: string;
+  text: string;
+  tags: string[]; // ✅ use this consistently
+}
 
 export type AdviceContextType = {
   adviceList: AdviceItem[];
@@ -26,7 +25,9 @@ export type SelectOption = {
 export interface TagProps {
   tags: string[];
   setTags: React.Dispatch<React.SetStateAction<string[]>>;
+  onAddCategory?: (newCategory: string) => void; // ✅ Add this line
 }
+
 
 export interface AdviceInputProps {
   customTag: string;
@@ -42,8 +43,9 @@ export interface CategoryInputProps {
    //onAddCategory: (newCategory: string) => void;
 }
 
-export type CategoryManagerProps = {
+export interface TagDropdownProps {
   tags: string[];
   setTags: React.Dispatch<React.SetStateAction<string[]>>;
-};
+}
+
 

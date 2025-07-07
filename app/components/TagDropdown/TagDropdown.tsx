@@ -1,11 +1,11 @@
 'use client';
 import React, { useState } from 'react';
-import styles from './CategoryDropdown.module.css';
+import styles from './TagDropdown.module.css';
 import { availableCategories } from '../options';
 import CategoryInput from '../CategoryInput/CategoryInput';
 import { TagProps } from '@/app/types/types';
 
-function CategoryDropdown({ tags, setTags }: TagProps) {
+function TagDropdown({ tags, setTags }: TagProps) {
   const [category, setCategory] = useState<string>("");
   const [customTag, setCustomTag] = useState("");
   const [isAddingCustomTag, setIsAddingCustomTag] = useState(false);
@@ -64,4 +64,4 @@ function CategoryDropdown({ tags, setTags }: TagProps) {
   );
 }
 
-export default CategoryDropdown;
+export default TagDropdown;
