@@ -4,8 +4,9 @@ import styles from './AdviceSection.module.css';
 import Button from "../ui/Button/Button";
 import { useAdvice } from "../../context/AdviceContext";
 import CategoryManager from "../TagManager/TagManager";
+import { fetchAdviceData } from "@/app/services/fetchAdviceData";
 
-export default function AdviceSection()  {
+export default function AdviceSection() {
     const [title, setTitle] = useState("Advice #56");
     const [category, setCategory] = useState<string>("");
     const [text, setText] = useState("Try to do things that you're incapable of.");
@@ -13,23 +14,21 @@ export default function AdviceSection()  {
 
     const { addAdvice } = useAdvice();
 
-   const fetchAdvice = async () => {
-    try {
-        const res = await fetch("https://api.adviceslip.com/advice?t=", { cache: "no-store"});
-        const json = await res.json();
-        const slip = json.slip;
+    const fetchAdvice = async () => {
+        try {
+            const slip = await fetchAdviceData();
+            setTitle(`Advice #${slip.id}`);
+            setText(slip.advice);
+            setTags([]);
+            setCategory("");
+        } catch (err) {
+            console.error("Failed to fetch advice", err);
+        }
+    };
 
-        setTitle(`Advice #${slip.id}`);
-        setText(slip.advice);
-        setTags([]); // ✅ Reset tags here
-        setCategory(""); // ✅ Optionally reset category too
-    } catch (err) {
-        console.error("Failed to fetch advice", err);
-    }
-};
-        const handleSave = () => {
+    const handleSave = () => {
         addAdvice({ title, text, tags });
-        };
+    };
 
     return (
         <div className={styles.container}>

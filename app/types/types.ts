@@ -1,7 +1,7 @@
 export type AdviceItem = {
   title: string;
   text: string;
-  tags: string[]; // ✅ use this consistently
+  tags?: string[];
 }
 
 export type AdviceContextType = {
@@ -27,7 +27,6 @@ export interface TagProps {
   setTags: React.Dispatch<React.SetStateAction<string[]>>;
   onAddCategory?: (newCategory: string) => void; // ✅ Add this line
 }
-
 
 export interface AdviceInputProps {
   customTag: string;
