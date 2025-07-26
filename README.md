@@ -1,6 +1,6 @@
 # Hi, My Name is Joanna
 
-I'm currently a student at Lexicon, and this is an assignment from my program. I have studied some basic JavaScript prior to this. This time around, I wanted to get a more fundamental understanding of the code to write more independently and effectively. So my code might not follow best practices but supports my understanding of the concepts. As I did in my earlier JavaScript projects, I wrote and rewrote parts of the code multiple times to get more experience and remember what to write by hand. After completing this project, I feel more confident about conquering JavaScript.
+I created this project during my time as a student at Lexicon. I have studied some basic JavaScript prior to this. This time around, I wanted to get a more fundamental understanding of the code to write more independently and effectively. So my code might not follow best practices but supports my understanding of the concepts. As I did in my earlier JavaScript projects, I wrote and rewrote parts of the code multiple times to get more experience and remember what to write by hand. After completing this project, I feel more confident about conquering JavaScript.
 
 ## Challenges
 
